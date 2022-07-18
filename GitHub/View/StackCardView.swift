@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StackCardView: View {
     
-    @EnvironmentObject var viewModel: HomeViewModel
+    @EnvironmentObject var viewModel: RepositoryViewModel
     var repository: Repositories
     
     @State var offset: CGFloat = 0

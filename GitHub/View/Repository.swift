@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct Home: View {
+struct Repository: View {
     
     @State var repoData = [Repositories]()
-    @StateObject var viewModel: HomeViewModel = HomeViewModel()
+    @StateObject var viewModel: RepositoryViewModel = RepositoryViewModel()
     
     var body: some View {
         
@@ -36,7 +36,7 @@ struct Home: View {
             ZStack {
                 if let repositories = viewModel.displaying_repositories {
                     if repositories.isEmpty {
-                        Text("Come back later we can find more matches for you!")
+                        Text("Oops! That's all!")
                             .font(.caption)
                             .foregroundColor(.gray)
                     } else {
@@ -98,7 +98,7 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Repository()
     }
 }
 

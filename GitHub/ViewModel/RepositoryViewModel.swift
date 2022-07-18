@@ -12,7 +12,7 @@ enum Defaults {
     static let url = "https://api.github.com/repositories"
 }
 
-class HomeViewModel: ObservableObject {
+class RepositoryViewModel: ObservableObject {
 
     @Published var fetched_repositories: [Repositories] = []
     @Published var displaying_repositories: [Repositories]?

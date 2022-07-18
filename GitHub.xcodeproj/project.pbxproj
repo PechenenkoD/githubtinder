@@ -11,9 +11,9 @@
 		19A0925228845C99005B7F10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0925128845C99005B7F10 /* ContentView.swift */; };
 		19A0925428845C9B005B7F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19A0925328845C9B005B7F10 /* Assets.xcassets */; };
 		19A0925728845C9B005B7F10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19A0925628845C9B005B7F10 /* Preview Assets.xcassets */; };
-		19A0926128845CE6005B7F10 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0926028845CE6005B7F10 /* Home.swift */; };
+		19A0926128845CE6005B7F10 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0926028845CE6005B7F10 /* Repository.swift */; };
 		19A09263288461FA005B7F10 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A09262288461FA005B7F10 /* Repositories.swift */; };
-		19A0926528846272005B7F10 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0926428846272005B7F10 /* HomeViewModel.swift */; };
+		19A0926528846272005B7F10 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0926428846272005B7F10 /* RepositoryViewModel.swift */; };
 		19A09267288466EC005B7F10 /* StackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A09266288466EC005B7F10 /* StackCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,9 +23,9 @@
 		19A0925128845C99005B7F10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		19A0925328845C9B005B7F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19A0925628845C9B005B7F10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		19A0926028845CE6005B7F10 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		19A0926028845CE6005B7F10 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		19A09262288461FA005B7F10 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
-		19A0926428846272005B7F10 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		19A0926428846272005B7F10 /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		19A09266288466EC005B7F10 /* StackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +89,7 @@
 		19A0925E28845CCC005B7F10 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				19A0926428846272005B7F10 /* HomeViewModel.swift */,
+				19A0926428846272005B7F10 /* RepositoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -97,7 +97,7 @@
 		19A0925F28845CD2005B7F10 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				19A0926028845CE6005B7F10 /* Home.swift */,
+				19A0926028845CE6005B7F10 /* Repository.swift */,
 				19A09266288466EC005B7F10 /* StackCardView.swift */,
 			);
 			path = View;
@@ -174,10 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A0925228845C99005B7F10 /* ContentView.swift in Sources */,
-				19A0926128845CE6005B7F10 /* Home.swift in Sources */,
+				19A0926128845CE6005B7F10 /* Repository.swift in Sources */,
 				19A0925028845C99005B7F10 /* GitHubApp.swift in Sources */,
 				19A09267288466EC005B7F10 /* StackCardView.swift in Sources */,
-				19A0926528846272005B7F10 /* HomeViewModel.swift in Sources */,
+				19A0926528846272005B7F10 /* RepositoryViewModel.swift in Sources */,
 				19A09263288461FA005B7F10 /* Repositories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
