@@ -10,8 +10,7 @@ import SwiftUI
 struct StackCardView: View {
     
     @EnvironmentObject var viewModel: RepositoryViewModel
-    var repository: Repositories
-    
+    @State var repository: Repositories
     @State var offset: CGFloat = 0
     @GestureState var isDragging: Bool = false
     @State var endSwipe: Bool = false
@@ -21,7 +20,6 @@ struct StackCardView: View {
         
         GeometryReader{proxy in
             let size = proxy.size
-            
             let index = CGFloat(viewModel.getIndex(repository: repository))
             let topOffset = (index <= 2 ? index : 3) * 15
             
