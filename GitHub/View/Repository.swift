@@ -30,6 +30,8 @@ struct Repository: View {
                 Text("Repositories")
                     .font(.title.bold())
             )
+            
+            
             .foregroundColor(.black)
             .padding()
             
@@ -49,7 +51,7 @@ struct Repository: View {
                     ProgressView()
                 }
             }
-            .padding(.top, 50)
+            .padding(.top, 80)
             .padding()
             .padding(.vertical)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -59,18 +61,16 @@ struct Repository: View {
                     doSwipe()
                 } label: {
                     Image(systemName: "delete.left")
-                        .font(.system(size: 25, weight: .bold))
+                        .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.gray)
-                        .shadow(radius: 5)
                         .padding(13)
                 }
                 Button {
                     doSwipe(rightSwipe: true)
                 } label: {
-                    Image(systemName: "suit.heart.fill")
-                        .font(.system(size: 25, weight: .bold))
+                    Image(systemName: "heart.fill")
+                        .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.red)
-                        .shadow(radius: 5)
                         .padding(13)
                 }
             }
