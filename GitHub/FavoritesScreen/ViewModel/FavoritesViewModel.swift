@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DetailViewModel: View {
+struct FavoritesViewModel: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,6 +15,6 @@ struct DetailViewModel: View {
 
 struct DetailViewModel_Previews: PreviewProvider {
     static var previews: some View {
-        DetailViewModel()
+        FavoritesViewModel()
     }
 }

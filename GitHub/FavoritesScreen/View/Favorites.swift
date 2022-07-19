@@ -7,17 +7,15 @@
 
 import SwiftUI
 
-struct Detail: View {
+struct Favorites: View {
     
-    let favoritesRepositories = ["repo", "repo2", "repo3"]
+    let favoritesRepositories = ["repo", "repo1", "repo2"]
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(favoritesRepositories, id: \.self) { repo in
-                    
-                        Text(repo)
-                    
+                    Text(repo)
                 }
             }
             .navigationTitle("Favorites")
@@ -27,6 +25,6 @@ struct Detail: View {
 
 struct Detail_Previews: PreviewProvider {
     static var previews: some View {
-        Detail()
+        Favorites()
     }
 }

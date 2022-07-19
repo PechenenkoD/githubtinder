@@ -18,7 +18,7 @@ struct StackCardView: View {
     
     var body: some View {
         
-        GeometryReader{proxy in
+        GeometryReader {proxy in
             let size = proxy.size
             let index = CGFloat(viewModel.getIndex(repository: repository))
             let topOffset = (index <= 2 ? index : 3) * 15
