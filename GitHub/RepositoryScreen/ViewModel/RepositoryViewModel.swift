@@ -16,7 +16,8 @@ class RepositoryViewModel: ObservableObject {
 
     @Published var fetched_repositories: [Repositories] = []
     @Published var displaying_repositories: [Repositories]?
-    
+    @Published var favouriteRepositories = []
+
     init() {
         fetched_repositories = []
         displaying_repositories = fetched_repositories
@@ -45,4 +46,5 @@ class RepositoryViewModel: ObservableObject {
         }
         task.resume()
     }
+    
 }

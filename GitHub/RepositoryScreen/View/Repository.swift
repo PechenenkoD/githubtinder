@@ -13,11 +13,10 @@ struct Repository: View {
     @StateObject var viewModel: RepositoryViewModel = RepositoryViewModel()
     
     var body: some View {
-        
         VStack {
-            
-            Button {
                 
+            Button {
+                self.
             } label: {
                 Image(systemName: "folder")
                     .resizable()
@@ -30,11 +29,11 @@ struct Repository: View {
                 Text("Repositories")
                     .font(.title.bold())
             )
-            
-            
+
+
             .foregroundColor(.black)
             .padding()
-            
+
             ZStack {
                 if let repositories = viewModel.displaying_repositories {
                     if repositories.isEmpty {

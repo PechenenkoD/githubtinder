@@ -74,8 +74,8 @@ struct StackCardView: View {
                     }
                 })
         )
-        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("ACTIONFROMBUTTON"), object: nil)) {
-            data in
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("ACTIONFROMBUTTON"), object: nil)) { data in
+            
             guard let info = data.userInfo else {
                 return
             }

@@ -15,6 +15,8 @@
 		19A09263288461FA005B7F10 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A09262288461FA005B7F10 /* Repositories.swift */; };
 		19A0926528846272005B7F10 /* RepositoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0926428846272005B7F10 /* RepositoryViewModel.swift */; };
 		19A09267288466EC005B7F10 /* StackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A09266288466EC005B7F10 /* StackCardView.swift */; };
+		19A0926E288680DB005B7F10 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0926D288680DB005B7F10 /* Detail.swift */; };
+		19A09270288680E8005B7F10 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0926F288680E8005B7F10 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		19A09262288461FA005B7F10 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 		19A0926428846272005B7F10 /* RepositoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewModel.swift; sourceTree = "<group>"; };
 		19A09266288466EC005B7F10 /* StackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackCardView.swift; sourceTree = "<group>"; };
+		19A0926D288680DB005B7F10 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		19A0926F288680E8005B7F10 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +63,8 @@
 		19A0924E28845C99005B7F10 /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
-				19A0925F28845CD2005B7F10 /* View */,
-				19A0925E28845CCC005B7F10 /* ViewModel */,
-				19A0925D28845CC2005B7F10 /* Model */,
+				19A0926928859BB6005B7F10 /* DetailScreen */,
+				19A0926828859B9D005B7F10 /* RepositoryScreen */,
 				19A0924F28845C99005B7F10 /* GitHubApp.swift */,
 				19A0925128845C99005B7F10 /* ContentView.swift */,
 				19A0925328845C9B005B7F10 /* Assets.xcassets */,
@@ -101,6 +104,49 @@
 				19A09266288466EC005B7F10 /* StackCardView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		19A0926828859B9D005B7F10 /* RepositoryScreen */ = {
+			isa = PBXGroup;
+			children = (
+				19A0925F28845CD2005B7F10 /* View */,
+				19A0925E28845CCC005B7F10 /* ViewModel */,
+				19A0925D28845CC2005B7F10 /* Model */,
+			);
+			path = RepositoryScreen;
+			sourceTree = "<group>";
+		};
+		19A0926928859BB6005B7F10 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				19A0926A28859BC2005B7F10 /* View */,
+				19A0926B28859BC7005B7F10 /* ViewModel */,
+				19A0926C28859BD0005B7F10 /* Model */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		19A0926A28859BC2005B7F10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				19A0926D288680DB005B7F10 /* Detail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19A0926B28859BC7005B7F10 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19A0926F288680E8005B7F10 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19A0926C28859BD0005B7F10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,11 +220,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A0925228845C99005B7F10 /* ContentView.swift in Sources */,
+				19A0926E288680DB005B7F10 /* Detail.swift in Sources */,
 				19A0926128845CE6005B7F10 /* Repository.swift in Sources */,
 				19A0925028845C99005B7F10 /* GitHubApp.swift in Sources */,
 				19A09267288466EC005B7F10 /* StackCardView.swift in Sources */,
 				19A0926528846272005B7F10 /* RepositoryViewModel.swift in Sources */,
 				19A09263288461FA005B7F10 /* Repositories.swift in Sources */,
+				19A09270288680E8005B7F10 /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
